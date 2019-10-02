@@ -7,8 +7,7 @@
 /* HEADER */
 /*---------------------*/
 .encabezado {
-    height: 100vh;
-    width: calc(100%-100px);
+    height: calc(100vh + 100px);
     background-image: url(../img/barberia4.jpg);
     background-position: 0px -100px;
     background-size: cover;

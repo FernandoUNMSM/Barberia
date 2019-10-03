@@ -262,6 +262,7 @@
 @media screen and (max-width: 770px) {
     .container-main {
         margin-bottom: 0;
+        text-align: center;
     }
     .container-main .superior {
         display: flex;
@@ -276,7 +277,7 @@
     }
     .container-main .inferior-container .inferior {
         width: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
     .servicios .tipos {
         display: block;
@@ -304,5 +305,12 @@
     }
     .encabezado .logo img {
         width: 250px;
+    }
+    .container-main .superior {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    .container-main .superior .sliders img{
+        margin-bottom: 50px;
     }
 }

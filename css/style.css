@@ -9,11 +9,13 @@
 .encabezado {
     height: calc(100vh + 100px);
     background-image: url(../img/barberia4.jpg);
-    background-position: 0px -100px;
+    background-position: 0px 0px;
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin-bottom: 200px;
+}
+.encabezado .responsive {
+    width: 100%;
+    height: 100%;
 }
 #menu-container {
     position: sticky;
@@ -80,6 +82,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .texto-encabezado .titulo {
     font-family: 'Merriweather', serif;
@@ -110,6 +113,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
+    margin-top: 200px;
 }
 .container-main .superior .sliders {
     position: relative;
@@ -126,7 +130,7 @@
 }
 .slider {
     opacity: 0;
-    transition: .6s ease all;
+    transition: .8s ease all;
 }
 .nuevo {
     opacity: 1;
@@ -256,10 +260,49 @@
     }
 }
 @media screen and (max-width: 770px) {
+    .container-main {
+        margin-bottom: 0;
+    }
+    .container-main .superior {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container-main .superior .sliders, .container-main .superior .texto, .container-main .superior figure img {
+        width: 100%;
+    }
+    .container-main .inferior-container {
+        flex-direction: column;
+    }
+    .container-main .inferior-container .inferior {
+        width: 100%;
+        margin-bottom: 100px;
+    }
     .servicios .tipos {
         display: block;
     }
     .servicios .tipos figure {
         width: 100%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .menu-container .menu {
+        padding: 0;
+    }
+    .encabezado .logo {
+        position: static;
+    }
+    .encabezado .responsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .encabezado .texto-encabezado {
+        height: 200px;
+    }
+    .encabezado .logo img {
+        width: 250px;
     }
 }

@@ -269,6 +269,51 @@
     padding: 0 50px;
     box-sizing: border-box;
 }
+/*---------------------*/
+/* SUSCRIBIRSE */
+/*---------------------*/
+#suscribete-container {
+    background-color: black;
+    padding: 1em 0;
+    width: 100%;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+#suscribete-container h3{
+    font-family: 'Suez One', serif;
+    margin-bottom: 20px;
+}
+#suscribete-container .error {
+    margin: 20px 0;
+}
+.input-group {
+    display: flex;
+    justify-content: center;
+}
+.input-group .input-group-label {
+    height: 30px;
+    width: 30px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.input-group .input-group-field {
+    height: 30px;
+    width: 50%;
+    border: none;
+    margin: 0 10px;
+    padding: 0 15px;
+    font-size: 15px;
+}
+.input-group .button {
+    border: none;
+    height: 30px;
+    width: 100px;
+    background-color: #883320;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
 
 /*---------------------*/
 /* Media Querys */

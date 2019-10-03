@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Suez+One|Yantramanav:300,400&display=swap"
     rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/foundation.min.css"> -->
   <link rel="icon" href="img/logo2.png">
 </head>
 
@@ -123,6 +124,27 @@
       </figure>
     </div>
   </section>
+  <div class="off-canvas-content" data-off-canvas-content>
+    <section id="suscribete-container" data-magellan-target="suscribete-container">
+      <h3 class="text-center">Registrate para recibir un descuento del 50% en tu primer corte</h3>
+      <form action="" method="" novalidate data-abide>
+        <div data-abide-error class="error grid-x columns align-center text-center" style="display: none">
+          <p><i class="fas fa-exclamation-triangle"></i> Ingreso un correo electronico no valido</p>
+        </div>
+        <div class="grid-x columns align-center">
+          <div class="input-group columns small-10 medium-6">
+            <span class="input-group-label ">
+              <i class="far fa-envelope"></i>
+            </span>
+            <input type="email" name="email" class="input-group-field" placeholder="tu@correo.com" required>
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Suscribirse!">
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
   <section class="local">
     <h1>Localizacion</h1>
     <iframe
@@ -130,6 +152,8 @@
       height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </section>
   <script src="https://kit.fontawesome.com/9ba1130819.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

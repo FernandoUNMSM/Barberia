@@ -7,7 +7,8 @@
 /* HEADER */
 /*---------------------*/
 .encabezado {
-    height: calc(100vh + 100px);
+    height: 100vh;
+    padding-bottom: 40px;
     background-image: url(../img/barberia4.jpg);
     background-position: 0px 0px;
     background-size: cover;
@@ -26,7 +27,6 @@
 }
 .menu-container {
     width: 100%;
-    font-family: 'Noto Sans', sans-serif;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -37,6 +37,18 @@
     height: 100%;
     width: 100%;
     padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Suez One', serif;
+}
+.menu-container .menu .titulo {
+    line-height: 4;
+    font-family: 'Suez One', serif;
+    visibility: hidden;
+    padding: 0 15px;
+}
+.menu-container .menu .titulo-on {
+    visibility: visible;
 }
 .menu-container .menu-nav {
     height: 80%;
@@ -44,6 +56,9 @@
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
+}
+.menu-container .menu-nav i {
+    display: none;
 }
 .menu-item {
     margin: 0 10px;
@@ -71,6 +86,9 @@
 }
 .menu-item:nth-child(2) span{
     display: block;
+}
+.menu .icon {
+    display: none;
 }
 .encabezado .logo {
     position: absolute;
@@ -103,7 +121,6 @@
 .container-main {
     max-width: 1200px;
     margin: auto;
-    margin-bottom: 100px;
     padding: 0 40px;
 }
 .container-main .superior {
@@ -113,7 +130,8 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
-    margin-top: 200px;
+    padding-top: 60px;
+    margin-top: 40px;
 }
 .container-main .superior .sliders {
     position: relative;
@@ -148,6 +166,7 @@
 .container-main .texto .titulo {
     margin-bottom: 15px;
     text-transform: uppercase;
+    font-family: 'Suez One', serif;
 }
 .container-main .inferior-container {
     width: 100%;
@@ -167,6 +186,7 @@
 }
 .container-main .inferior .texto .titulo{
     font-size: 25px;
+    font-family: 'Suez One', serif;
 }
 /*---------------------*/
 /* SERVICIOS */
@@ -174,6 +194,7 @@
 
 .servicios {
     width: 100%;
+    padding-top: 60px;
 }
 .servicios .titulo {
     height: 150px;
@@ -183,15 +204,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Yantramanav', sans-serif;
 }
 .servicios .titulo h1{
     text-transform: uppercase;
+    font-family: 'Suez One', serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 25px;
 }
 .servicios .titulo h1 span{
     font-weight: 700;
+    color: gray;
 }
 .servicios .titulo p{
     font-size: 20px;
@@ -251,8 +273,11 @@
 /*---------------------*/
 /* Media Querys */
 /*---------------------*/
-
-
+@media screen and (max-width: 1400px) {
+    .menu-container .menu .menu-item {
+        margin: 15px 0;
+    }
+}
 @media screen and (max-width: 1100px) {
     .servicios .tipos figure {
         height: 200px;
@@ -260,6 +285,88 @@
     }
 }
 @media screen and (max-width: 770px) {
+    .encabezado {
+        margin-bottom: 250px;
+    }
+    .menu-container .menu {
+        padding: 0 30px;
+    }
+    .menu-container .menu-nav{
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        height: fit-content;
+        background-color: #fff;
+        transition: .3s ease right;
+        border-bottom: 1px solid gray;
+    }   
+    .menu-container .menu-nav i {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .menu-item .item-a{
+        color: black;
+        /* border-bottom: 1px solid #000; */
+    }
+    .menu-container .menu .menu-nav .menu-item {
+        text-align: center;
+    }
+    .menu-container .menu .menu-nav .menu-item .span {
+        display: none;
+    }
+    .menu-item:hover span{
+        display: none;
+    }
+    .menu-item:nth-child(2) span{
+        display: none;
+    }
+    .menu-container .icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .container-main {
         margin-bottom: 0;
         text-align: center;
@@ -285,20 +392,32 @@
     .servicios .tipos figure {
         width: 100%;
     }
+    .local {
+        line-height: 0;
+    }
+    .local h1 {
+        margin: 20px 0;
+    }
+    .local iframe {
+        padding: 0;
+    }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 660px) {
     .menu-container .menu {
         padding: 0;
+    }
+    .encabezado {
+        margin-bottom: 200px;
     }
     .encabezado .logo {
         position: static;
     }
     .encabezado .responsive {
+        padding-top: 90px;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
     .encabezado .texto-encabezado {
         height: 200px;

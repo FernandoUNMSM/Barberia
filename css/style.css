@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+*::selection {
+    background-color: aqua;
+}
 
 /*---------------------*/
 /* HEADER */
@@ -110,7 +113,6 @@
     text-transform: uppercase;
     font-weight: 300;
 }
-
 .fuera {
     background-color: #fff;
     border-bottom: 1px solid gray;
@@ -380,38 +382,9 @@
         color: black;
         cursor: pointer;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .input-group .input-group-field {
+        width: 40%;
+    }
     .container-main {
         margin-bottom: 0;
         text-align: center;

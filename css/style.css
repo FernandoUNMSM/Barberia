@@ -359,7 +359,7 @@
     background-position: center;
     background-size: cover;
     filter: grayscale(100%);
-    transition: .5s ease all;
+    transition: .4s ease all;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,16 +398,18 @@
 /*---------------------*/
 .local {
     width: 100%;
+    line-height: 0;
 }
 .local h1 {
     padding: 20px 0;
     text-align: center;
     font-family: 'Suez One', serif;
     font-size: 31px;
+    line-height: initial;
 }
 .local iframe {
     width: 100%;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     box-sizing: border-box;
 }
 /*---------------------*/
@@ -492,6 +494,9 @@
     .galeria-container .galeria .inferior, 
     .galeria-container .galeria .superior{
         width: 95%;
+    }
+    .menu-container .menu {
+        padding: 0 45px;
     }
 }
 @media screen and (max-width: 770px) {
@@ -582,7 +587,9 @@
     }
     .galeria-container {
         margin-top: 0;
-    
+    }
+    .container-main .superior div figure img {
+        margin-bottom: 50px;
     }
 }
 @media screen and (max-width: 660px) {

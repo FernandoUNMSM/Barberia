@@ -64,3 +64,8 @@ const galeriaOff = document.querySelector('#galeria-off');
 galeriaOff.addEventListener('click',()=> {
     galeria.style.transform="translateX(100%)";
 });
+
+var gestos = new Hammer(galeria);
+gestos.on('swiperight', function(ev) {
+    galeria.style.transform = "translateX(100%)";
+});

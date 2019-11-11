@@ -13,6 +13,7 @@
   <link rel="icon" href="img/logo2.png">
 </head>
 </style>
+
 <body>
   <!-- Menu -->
 
@@ -39,7 +40,11 @@
             <span></span>
           </li>
           <li class="menu-item">
-            <a href="" class="item-a">Localización</a>
+            <a href="#loca" class="item-a">Localización</a>
+            <span></span>
+          </li>
+          <li class="menu-item">
+            <a href="#gale" class="item-a">Galeria</a>
             <span></span>
           </li>
           <i class="far fa-times-circle" id="x"></i>
@@ -118,8 +123,53 @@
   </main>
 
   <!-- Main -->
-  <!-- Servicios -->
 
+  <!-- Galeria -->
+
+  <section class="galeria-container" id="gale">
+    <h1 class="galeria-titulo">Galeria</h1>
+    <div class="galeria">
+      <div class="superior">
+        <figure><img src="./img/barberia/1.jpeg" alt=""></figure>
+        <figure><img src="./img/barberia/2.jpeg" alt=""></figure>
+      </div>
+      <div class="inferior">
+        <figure><img src="./img/barberia/3.jpeg" alt=""></figure>
+        <figure id="galeria-on">
+          <p>
+            Ver más <br>
+            <i class="fas fa-arrow-right"></i>
+          </p>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria-complete" id="galeria">
+    <h1 class="galeria-titulo">Galeria Completa<i id="galeria-off" class="fas fa-times-circle"></i></h1>
+    <div class="galeria">
+      <figure><img src="./img/barberia/16.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/1.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/2.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/3.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/4.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/5.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/6.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/7.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/8.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/9.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/10.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/11.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/12.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/13.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/14.jpeg" alt=""></figure>
+      <figure><img src="./img/barberia/15.jpeg" alt=""></figure>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+
+  <!-- Servicios -->
   <section class="servicios" id="servicios">
     <div class="titulo">
       <h1>Nuestros <span>Servicios</span></h1>
@@ -128,12 +178,30 @@
     <div class="tipos">
       <figure>
         <p>Corte de Pelo</p>
+        <p>S/. 10</p>
       </figure>
+      <!--   <figure>
+            <p>Afeitado</p>
+          </figure> -->
       <figure>
-        <p>Afeitado</p>
+        <p>Corte Degradado</p>
+        <p>S/. 15</p>
       </figure>
       <figure>
         <p>Arreglo de barba</p>
+        <p>S/. 15</p>
+      </figure>
+      <figure>
+        <p>Arreglo de cejas</p>
+        <p>S/. 15</p>
+      </figure>
+      <figure>
+        <p>Arreglo de vigote</p>
+        <p>S/. 10</p>
+      </figure>
+      <figure>
+        <p>Limpieza facial</p>
+        <p>S/. 25</p>
       </figure>
     </div>
   </section>
@@ -166,13 +234,13 @@
   <!-- Suscribete -->
   <!-- Info local -->
 
-  <section class="local">
+  <section class="local" id="loca">
     <h1>Localizacion</h1>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.840771132022!2d-77.08661578464901!3d-12.054474445327267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c99c6664d21f%3A0x17bb2f8fef8ca967!2sUNMSM!5e0!3m2!1ses-419!2spe!4v1570049473206!5m2!1ses-419!2spe"
       height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </section>
-  
+
   <!-- Info local -->
   <!-- JS -->
   <script src="https://kit.fontawesome.com/9ba1130819.js"></script>

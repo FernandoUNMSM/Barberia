@@ -53,3 +53,14 @@ window.onscroll = () => {
 }
 
 $(document).foundation()
+
+const galeria = document.querySelector('#galeria');
+const galeriaOn = document.querySelector('#galeria-on');
+galeriaOn.addEventListener('click',()=> {
+    galeria.style.transform="translateX(0)";
+});
+
+const galeriaOff = document.querySelector('#galeria-off');
+galeriaOff.addEventListener('click',()=> {
+    galeria.style.transform="translateX(100%)";
+});

@@ -658,15 +658,21 @@
         margin: 40px auto;
     }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 427px) {
     .galeria-container .galeria figure {
         width: 250px;
         height: 250px;
     }
     
     .galeria-complete .galeria-titulo {
-        width: 100%;
+        width: 90%;
         position: relative;
         margin: 40px auto;
+    }
+    .container-main .superior .sliders figure{
+        padding-bottom: 150px;
+    }
+    .container-main .superior .sliders figure img{
+        margin: 0;
     }
 }

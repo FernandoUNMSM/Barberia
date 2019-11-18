@@ -36,6 +36,7 @@ window.onscroll = () => {
         if(n!=0) {
             for (let i=0; i<a.length;i++) {
                 a[i].style.color="black";
+                burguer.style.color="black";
                 span[i].style.backgroundColor="black";
             }
         }
@@ -45,6 +46,7 @@ window.onscroll = () => {
         titulo.classList.remove('titulo-on');
         if(n!=0) {
             for (let i=0; i<a.length;i++) {
+                burguer.style.color="white";
                 a[i].style.color="white";
                 span[i].style.backgroundColor="white";
             }

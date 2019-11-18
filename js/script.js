@@ -65,7 +65,14 @@ galeriaOff.addEventListener('click',()=> {
     galeria.style.transform="translateX(100%)";
 });
 
+
+
+
 var gestos = new Hammer(galeria);
 gestos.on('swiperight', function(ev) {
     galeria.style.transform = "translateX(100%)";
 });
+
+const gale = document.querySelector('#gale');
+var gestos2 = new Hammer(gale);
+gestos2.on('swipeleft', ev => galeria.style.transform="translateX(0)");
